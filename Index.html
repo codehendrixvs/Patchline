@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patchline — Phone Problems, Answered</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav>
+    <a href="#top" class="brand"><span class="dot"></span>PATCHLINE</a>
+    <ul>
+      <li><a href="#switchboard">Problems</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-call" href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Phone help, no menu maze</div>
+        <h1>Something's wrong with your phone.<br>Let's get you connected.</h1>
+        <p class="lead">Pick the jack that matches your problem. We'll walk you through what to try first, then patch you straight to a specialist if it's not fixed.</p>
+      </div>
+
+      <div class="switchboard" id="switchboard">
+        <div class="sb-label">Select a line —</div>
+        <svg class="cables" id="cablesSvg"></svg>
+
+        <div class="jacks" id="jacks">
+          <button class="jack" data-key="signal">
+            <span class="num"><span class="hole"></span>LINE 01</span>
+            <span class="label">No Signal / Dropped Calls</span>
+          </button>
+          <button class="jack" data-key="screen">
+            <span class="num"><span class="hole"></span>LINE 02</span>
+            <span class="label">Cracked or Unresponsive Screen</span>
+          </button>
+          <button class="jack" data-key="charge">
+            <span class="num"><span class="hole"></span>LINE 03</span>
+            <span class="label">Won't Charge / Dies Fast</span>
+          </button>
+          <button class="jack" data-key="billing">
+            <span class="num"><span class="hole"></span>LINE 04</span>
+            <span class="label">Billing or Account Issue</span>
+          </button>
+          <button class="jack" data-key="slow">
+            <span class="num"><span class="hole"></span>LINE 05</span>
+            <span class="label">Frozen or Running Slow</span>
+          </button>
+          <button class="jack" data-key="lost">
+            <span class="num"><span class="hole"></span>LINE 06</span>
+            <span class="label">Lost or Stolen Phone</span>
+          </button>
+        </div>
+
+        <div class="exchange-row">
+          <div class="exchange-socket" id="exchangeSocket"><span class="core"></span></div>
+        </div>
+        <div style="text-align:center; margin-top:8px;">
+          <span class="exchange-caption">Operator exchange</span>
+        </div>
+
+        <div class="detail" id="detail">
+          <p class="placeholder">No line selected yet — choose a jack above and the fix sheet opens here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2>How Patchline works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="n mono">01</span>
+          <h3>Plug into your problem</h3>
+          <p>Pick the jack that matches what's actually happening — not a generic category, the real symptom.</p>
+        </div>
+        <div class="step">
+          <span class="n mono">02</span>
+          <h3>Work the board</h3>
+          <p>Try the same quick fixes an operator would ask you to try first, in the order that actually rules things out.</p>
+        </div>
+        <div class="step">
+          <span class="n mono">03</span>
+          <h3>Stay on the line</h3>
+          <p>Still stuck? We connect you straight to a live specialist — no phone tree, no repeating yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="call-card">
+          <div class="status-row">
+            <span class="status-dot" id="statusDot"></span>
+            <span class="status-text" id="statusText">Checking hours…</span>
+          </div>
+          <div class="hours">Mon–Thru 9am–8pm, based on your local time</div>
+          <a class="call-btn" href="mailto:workcodevs@gmail.com">Contact Email</a>
+        </div>
+        <div class="contact-notes">
+          <p><strong>The email is free</strong> — Patchline doesn't charge for diagnosis, only for repairs you approve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Frequently asked</h2>
+      <div id="faqList">
+        <div class="faq-item">
+          <button class="faq-q">Is Patchline a repair shop?
+            <span class="plus mono">+</span>
+          </button>
+          <div class="faq-a"><p>No — we're the first email support. We diagnose the problem, then route you to the right place: your warranty, your carrier, a repair tech, or just a fix you can do yourself in two minutes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you charge for the email?
+            <span class="plus mono">+</span>
+          </button>
+          <div class="faq-a"><p>The email and the diagnosis are free. You only pay if you approve an actual repair, and we tell you the cost before anything happens.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What if my phone won't turn on at all?
+            <span class="plus mono">+</span>
+          </button>
+          <div class="faq-a"><p>That's treated as urgent. Mention it as soon as you're connected and you'll jump ahead of the general queue instead of waiting behind billing calls.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I text instead of calling?
+            <span class="plus mono">+</span>
+          </button>
+          <div class="faq-a"><p>No — email first and an operator will check up the thread by email, usually within a few minutes.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="#top" class="brand"><span class="dot"></span>PATCHLINE</a>
+    <span class="fine">FREE TO EMAIL · OPERATORS STANDING BY CODEHENDRIX DEVELOPER</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
